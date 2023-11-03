@@ -59,6 +59,12 @@ const listContacts = async () => JSON.parse(await fs.readFile(contactsPath));
 Надає криптографічну функціональність, яка включає набір оболонок для функцій хешування OpenSSL, HMAC, шифрування, дешифрування, підпису та перевірки.  
 [**randomUUID**](https://nodejs.org/api/crypto.html#cryptorandomuuidoptions) — генерує випадковий UUID RFC 4122 версії 4 UUID.
 
+```js
+const { randomUUID } = require("node:crypto");
+
+id: randomUUID();
+```
+
 ## NPM-модулі
 
 ### [**nodemon**](https://www.npmjs.com/package/nodemon) — автоматичний перезапуск при змінах
